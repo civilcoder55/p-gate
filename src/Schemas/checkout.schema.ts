@@ -17,7 +17,10 @@ export const CheckoutPaySchema = object({
         expYear: string().min(4).max(4).required("expYear is required"),
         expMonth: string().min(2).max(2).required("expMonth is required"),
         cvc: string().min(3).max(4).required("cvc is required"),
-        CardNumber: string().max(16).required("CardNumber is required"),
+        CardNumber: string().required("CardNumber is required").matches(
+            /^[0-9]{16,16}$/,
+            "Please enter valid 16 credit card numbers"
+          ),
         CardHolderName: string().required("CardHolderName is required")
     }),
 });
