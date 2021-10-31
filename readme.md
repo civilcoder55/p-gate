@@ -15,6 +15,7 @@
 | `GET`  | `/api/merchant/profile`      | Retrieve merchant all profile data.  |
 | `GET`  | `/api/merchant/transactions` | Retrieve merchant transactions data. |
 
+
 #### Apps Endpoints
 
 | Method   | URL                       | Description                          |

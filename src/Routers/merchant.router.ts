@@ -12,4 +12,5 @@ router.post("/api/merchant", validate(createMerchantSchema), controller.create);
 router.get("/api/merchant", requireAuth, controller.details);
 router.get("/api/merchant/profile", requireAuth, controller.profile);
 router.get("/api/merchant/transactions", requireAuth, controller.transactions);
+
 export default router
